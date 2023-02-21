@@ -3,81 +3,72 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
         "Hello",
-        "Good day"
+        "Hi",
+        "Hey"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hello! Welcome to our fashion store. How can I help you today?",
+        "Hi! Is there anything you're looking for?"
       ]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "tag": "product_information",
+      "patterns": [
+        "Can you tell me more about your products?",
+        "What types of clothes do you sell?",
+        "Do you have any new arrivals?"
+      ],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "We sell a variety of clothes including shirts, pants, dresses, and accessories. Our new arrivals are listed on our website. Would you like me to send you a link?",
+        "We have a wide selection of clothes for men and women. Our new arrivals are updated regularly on our website."
+      ]
+    },
+    {
+      "tag": "discounts",
+      "patterns": [
+        "Are there any discounts available?",
+        "Do you have any promotions?"
+      ],
+      "responses": [
+        "We have ongoing promotions and discounts. You can find them on our website or by subscribing to our newsletter.",
+        "Yes, we have discounts available on certain products. You can find them on our website or by subscribing to our newsletter."
+      ]
+    },
+    {
+      "tag": "checkout",
+      "patterns": [
+        "How do I checkout?",
+        "How can I place an order?",
+        "Can I pay with a credit card?"
+      ],
+      "responses": [
+        "You can place an order on our website or by calling our customer service number. We accept all major credit cards.",
+        "You can checkout on our website or by calling our customer service number. We accept all major credit cards and provide free shipping for orders over $50."
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "Thank you",
+        "Thanks",
+        "Appreciate it"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "You're welcome. Is there anything else I can help you with?",
+        "No problem. Let me know if you have any other questions."
       ]
     },
     {
-      "tag": "payments",
+      "tag": "goodbye",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "Goodbye",
+        "See you later",
+        "Bye"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
-      ]
-    },
-    {
-      "tag": "delivery",
-      "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
-      ]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
-      ],
-      "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Thank you for visiting our fashion store. Have a great day!",
+        "Goodbye. We hope to see you again soon!"
       ]
     }
   ]
