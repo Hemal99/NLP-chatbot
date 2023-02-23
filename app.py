@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.get("/")
+@app.get("/home")
 def index_get():
      return "Hello, World!"
 
