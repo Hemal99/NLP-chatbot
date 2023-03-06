@@ -2,11 +2,7 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": [
-        "Hello",
-        "Hi",
-        "Hey"
-      ],
+      "patterns": ["Hello", "Hi", "Hey"],
       "responses": [
         "Hello! Welcome to our fashion store. How can I help you today?",
         "Hi! Is there anything you're looking for?"
@@ -22,6 +18,94 @@
       "responses": [
         "We sell a variety of clothes including shirts, pants, dresses, and accessories. Our new arrivals are listed on our website. Would you like me to send you a link?",
         "We have a wide selection of clothes for men and women. Our new arrivals are updated regularly on our website."
+      ]
+    },
+    {
+      "tag": "product-inquiry",
+      "patterns": [
+        "Can you tell me more about {product_name}?",
+        "What is {product_name}?",
+        "Tell me about {product_name}"
+      ],
+      "responses": [
+        "{product_name} is a popular item in our store. It is {description}. Would you like to buy it?"
+      ]
+    },
+    {
+      "tag": "product-recommendation",
+      "patterns": [
+        "What do you recommend for {occasion}?",
+        "What should I wear to {occasion}?",
+        "Do you have any {occasion} recommendations?"
+      ],
+      "responses": [
+        "For {occasion}, we recommend {product_name}. It is {description} and would be perfect for the event."
+      ]
+    },
+    {
+      "tag": "purchase",
+      "patterns": [
+        "I would like to buy {product_name}",
+        "Can I purchase {product_name}?",
+        "How do I buy {product_name}?"
+      ],
+      "responses": [
+        "Sure, let me help you place an order for {product_name}. What size and color would you like?"
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "How do I pay for my order?",
+        "Can I pay with a credit card?",
+        "What payment methods do you accept?"
+      ],
+      "responses": [
+        "We accept all major credit cards and PayPal. You can pay online during checkout."
+      ]
+    },
+    {
+      "tag": "shipping",
+      "patterns": [
+        "How long will it take to receive my order?",
+        "What is the shipping time?",
+        "Do you offer expedited shipping?"
+      ],
+      "responses": [
+        "Our standard shipping takes 3-5 business days. We also offer expedited shipping for an additional fee."
+      ]
+    },
+    {
+      "tag": "return",
+      "patterns": [
+        "Can I return {product_name}?",
+        "What is your return policy?",
+        "I need to return an item."
+      ],
+      "responses": [
+        "We have a 30-day return policy. Please contact our customer service team to initiate a return."
+      ]
+    },
+    {
+      "tag": "discount",
+      "patterns": [
+        "Do you offer any discounts?",
+        "Is there a sale going on?",
+        "Can I get a coupon?"
+      ],
+      "responses": [
+        "Yes, we have a sale going on right now. Use code SALE10 for 10% off your purchase."
+      ]
+    },
+    {
+      "tag": "outfit-ideas",
+      "patterns": [
+        "Can you suggest some outfit ideas?",
+        "What are some trending outfits?",
+        "How do I put together an outfit?"
+      ],
+      "responses": [
+        "We have a fashion blog on our website with outfit ideas and styling tips. Check it out for some inspiration!"
       ]
     },
     {
@@ -48,12 +132,96 @@
       ]
     },
     {
-      "tag": "thanks",
+      "tag": "size",
       "patterns": [
-        "Thank you",
-        "Thanks",
-        "Appreciate it"
+        "What size should I order?",
+        "How do your sizes run?",
+        "Do you have a size chart?"
       ],
+      "responses": [
+        "Please refer to our size chart on our website for accurate sizing information. You can also contact our customer service team for assistance."
+      ]
+    },
+    {
+      "tag": "color",
+      "patterns": [
+        "What colors does {product_name} come in?",
+        "Can I get {product_name} in a different color?",
+        "Is {color} available for {product_name}?"
+      ],
+      "responses": [
+        "{product_name} comes in a variety of colors, including {color_options}. Please select your preferred color during checkout."
+      ]
+    },
+    {
+      "tag": "material",
+      "patterns": [
+        "What material is {product_name} made of?",
+        "Is {product_name} made of high-quality material?",
+        "Can you tell me more about the material of {product_name}?"
+      ],
+      "responses": [
+        "{product_name} is made of {material}. We use high-quality materials to ensure the best possible product for our customers."
+      ]
+    },
+    {
+      "tag": "style",
+      "patterns": [
+        "What style is {product_name}?",
+        "Can you describe the style of {product_name}?",
+        "Is {product_name} a casual or formal style?"
+      ],
+      "responses": [
+        "{product_name} is a {style_description} style. It can be dressed up or down depending on the occasion."
+      ]
+    },
+    {
+      "tag": "stock",
+      "patterns": [
+        "Is {product_name} in stock?",
+        "When will {product_name} be back in stock?",
+        "Do you have {product_name} in my size?"
+      ],
+      "responses": [
+        "Please check our website for the most up-to-date information on product availability. If {product_name} is not currently in stock, you can sign up for email notifications when it becomes available."
+      ]
+    },
+    {
+      "tag": "gifts",
+      "patterns": [
+        "Do you have gift options?",
+        "Can I purchase a gift card?",
+        "What are some gift ideas for {occasion}?"
+      ],
+      "responses": [
+        "Yes, we have gift cards available for purchase. We also have a gift guide on our website for {occasion} gift ideas."
+      ]
+    },
+    {
+      "tag": "customer-service",
+      "patterns": [
+        "How do I contact customer service?",
+        "What is your customer service phone number?",
+        "Do you have a live chat support?"
+      ],
+      "responses": [
+        "You can contact our customer service team via phone, email, or live chat on our website. Our phone number is 011-2456789."
+      ]
+    },
+    {
+      "tag": "shipping-status",
+      "patterns": [
+        "Can you tell me the status of my shipment?",
+        "Where is my order?",
+        "Has my order shipped yet?"
+      ],
+      "responses": [
+        "Please check your order status on our website for the most up-to-date information on your shipment. You can also contact our customer service team for assistance."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thank you", "Thanks", "Appreciate it"],
       "responses": [
         "You're welcome. Is there anything else I can help you with?",
         "No problem. Let me know if you have any other questions."
@@ -61,11 +229,7 @@
     },
     {
       "tag": "goodbye",
-      "patterns": [
-        "Goodbye",
-        "See you later",
-        "Bye"
-      ],
+      "patterns": ["Goodbye", "See you later", "Bye"],
       "responses": [
         "Thank you for visiting our fashion store. Have a great day!",
         "Goodbye. We hope to see you again soon!"
